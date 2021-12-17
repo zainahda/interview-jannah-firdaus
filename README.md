@@ -1,3 +1,13 @@
+const refreshData = () => {
+    axios.get(`https://randomuser.me/api/?results=12`).then((res) => {
+      setUsers(res.data.results);
+    });
+  };
+  
+permasalahan nya terletak setelah res.data harus di tambah results untuk endpoint
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
